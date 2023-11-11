@@ -10,7 +10,7 @@ import "../assets/styles/swiper.css";
 // import required modules
 import { EffectCards } from "swiper/modules";
 
-export default function Test() {
+export default function Test({ data }) {
     return (
         <>
             <Swiper
@@ -19,15 +19,24 @@ export default function Test() {
                 modules={[EffectCards]}
                 className="mySwiper"
             >
-                <SwiperSlide>Slide 1</SwiperSlide>
-                <SwiperSlide>Slide 2</SwiperSlide>
-                <SwiperSlide>Slide 3</SwiperSlide>
-                <SwiperSlide>Slide 4</SwiperSlide>
-                <SwiperSlide>Slide 5</SwiperSlide>
-                <SwiperSlide>Slide 6</SwiperSlide>
-                <SwiperSlide>Slide 7</SwiperSlide>
-                <SwiperSlide>Slide 8</SwiperSlide>
-                <SwiperSlide>Slide 9</SwiperSlide>
+                {data &&
+                    data.map((data) => {
+                        return (
+                            <SwiperSlide
+                                key={data.id}
+                                className="text-center bg-no-repeat bg-cover "
+                                style={{
+                                    backgroundImage: `url(${data.image})`,
+                                }}
+                            >
+                                <div className="w-full h-full bg-black opacity-70 flex justify-center items-center px-5">
+                                    <h1 className="text-white opacity-100">
+                                        {data.name}
+                                    </h1>
+                                </div>
+                            </SwiperSlide>
+                        );
+                    })}
             </Swiper>
         </>
     );
