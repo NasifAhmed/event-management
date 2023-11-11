@@ -18,7 +18,7 @@ export default function NavBar() {
 
     return (
         <>
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-base-100 mb-10">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -50,6 +50,7 @@ export default function NavBar() {
                     <ul className="menu menu-horizontal px-1">{Links}</ul>
                 </div>
                 <div className="navbar-end">
+                    <a className="btn">Log In</a>
                     <a className="btn">Button</a>
                 </div>
             </div>

@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Event Planning Consultation",
+        "image": "https://i.ibb.co/8mdYYdH/service1.png",
+        "price": 500,
+        "short_description": "Expert advice on planning your tech event.",
+        "long_description": "Kickstart your event planning with a one-on-one consultation. Our experienced event planners will provide expert advice on every aspect of your tech event. From choosing the perfect venue to crafting a compelling theme and managing logistics, we've got you covered. Make informed decisions and set the stage for a successful and memorable tech event."
+    },
+    {
+        "id": 2,
+        "name": "Venue Rental",
+        "image": "https://i.ibb.co/QfLnFCv/service2.png",
+        "price": 2000,
+        "short_description": "Rent a state-of-the-art venue for your tech event.",
+        "long_description": "Immerse your audience in a cutting-edge tech environment by renting our state-of-the-art venue. Equipped with the latest technology and designed for versatility, our venue provides the perfect backdrop for your tech event. From interactive displays to comfortable seating, elevate the attendee experience with our premier venue rental service."
+    },
+    {
+        "id": 3,
+        "name": "Speaker Management",
+        "image": "https://i.ibb.co/rb8NH5G/service3.png",
+        "price": 1000,
+        "short_description": "Ensure a lineup of top-notch speakers for your event.",
+        "long_description": "Curate an impressive lineup of speakers for your tech event with our Speaker Management service. We handle the entire process, from identifying and negotiating with industry experts to coordinating their schedules. Ensure that your event leaves a lasting impact with engaging and knowledgeable speakers who captivate your audience."
+    },
+    {
+        "id": 4,
+        "name": "Customized Event App",
+        "image": "https://i.ibb.co/ZS1GFzw/serivce4.png",
+        "price": 1500,
+        "short_description": "Get a personalized mobile app for your event.",
+        "long_description": "Enhance attendee engagement and streamline event logistics with our Customized Event App. Tailored to your event's unique requirements, this mobile app offers features like personalized schedules, networking opportunities, live updates, and interactive maps. Provide a seamless and immersive experience for attendees, making your tech event unforgettable."
+    },
+    {
+        "id": 5,
+        "name": "Tech Showcase Booth",
+        "image": "https://i.ibb.co/71jR93y/service5.png",
+        "price": 800,
+        "short_description": "Showcase your products in a dedicated tech expo booth.",
+        "long_description": "Maximize your company's visibility at the tech event by securing a Tech Showcase Booth. This dedicated expo space allows you to exhibit your latest products or services in a high-traffic area. Engage with potential clients, network with industry professionals, and make a lasting impression on attendees. Elevate your brand with a standout presence at the event."
+    },
+    {
+        "id": 6,
+        "name": "Social Media Promotion Package",
+        "image": "https://i.ibb.co/6ysC2VN/service6.png",
+        "price": 600,
+        "short_description": "Boost your event's visibility with a comprehensive social media package.",
+        "long_description": "Drive excitement and attendance for your tech event with our Social Media Promotion Package. We'll craft targeted social media campaigns, leverage influencer outreach, and create compelling content to enhance your event's online presence. Increase engagement, generate buzz, and ensure that your event trends across social platforms, reaching a broader audience."
+    }
+]
