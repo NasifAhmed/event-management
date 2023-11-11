@@ -17,7 +17,7 @@ export default function Test({ data }) {
                 effect={"cards"}
                 grabCursor={true}
                 modules={[EffectCards]}
-                className="mySwiper"
+                className="mySwiper "
             >
                 {data &&
                     data.map((data) => {

@@ -5,11 +5,17 @@ import { Toaster } from "react-hot-toast";
 
 export default function App() {
     return (
-        <div className="max-w-screen-xl mx-auto space-y-8">
+        <div className="max-w-screen-xl mx-auto space-y-20">
             <NavBar></NavBar>
             <Outlet></Outlet>
             <Footer></Footer>
-            <Toaster position="bottom-center" reverseOrder={false} />
+            <Toaster
+                position="bottom-center"
+                reverseOrder={false}
+                containerStyle={{
+                    bottom: 100,
+                }}
+            />
         </div>
     );
 }

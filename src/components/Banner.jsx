@@ -28,7 +28,8 @@ export default function Banner() {
                     <div>
                         <h1 className="text-5xl font-bold">Techmania</h1>
                         <p className="py-6 md:max-w-[500px]">
-                            Organizing tech events at gigabit speed since 2020.
+                            Organizing tech and gaming events at gigabit speed
+                            since 2020.
                         </p>
                         {/* <button className="btn btn-primary">Get Started</button> */}
                     </div>

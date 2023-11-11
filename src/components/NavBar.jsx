@@ -1,7 +1,14 @@
 import { Fragment } from "react";
 import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../providers/AuthProvider";
+import toast from "react-hot-toast";
 
 export default function NavBar() {
+    const { user, logOut } = useContext(AuthContext);
+    const navigate = useNavigate();
+
     const Links = (
         <Fragment>
             <li>
@@ -15,6 +22,19 @@ export default function NavBar() {
             </li>
         </Fragment>
     );
+
+    const logoutHandler = () => {
+        toast
+            .promise(logOut(), {
+                loading: "Logging out...",
+                success: <b>Log out successful!</b>,
+                error: <b>Could not log out.</b>,
+            })
+            .then()
+            .catch((error) => {
+                console.error(error);
+            });
+    };
 
     return (
         <>
@@ -44,14 +64,32 @@ export default function NavBar() {
                             {Links}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                    <a
+                        className="btn btn-ghost normal-case text-xl"
+                        onClick={() => navigate("/")}
+                    >
+                        Techmania
+                    </a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">{Links}</ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Log In</a>
-                    <a className="btn">Button</a>
+                    {user ? (
+                        <>
+                            <div className="flex mr-3">
+                                <img src={user.photoURL} />
+                                <h1>{user.displayName}</h1>
+                            </div>
+                            <a className="btn" onClick={logoutHandler}>
+                                Log Out
+                            </a>
+                        </>
+                    ) : (
+                        <a className="btn" onClick={() => navigate("/login")}>
+                            Log In
+                        </a>
+                    )}
                 </div>
             </div>
         </>
